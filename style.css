@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: 'lora', serif;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.container {
+
+}
+
+h2 {
+    font-size: 28px;
+    font-family:'ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+p {
+    color: #7c7c7c;
+}
+
+header {
+    padding: 40px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header ul li {
+    text-decoration: none;
+    justify-content: space-between;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    list-style: none;
+
+}
+
+header ul a {
+    text-decoration: none;
+    color: #A8A8A8;
+}
+
+.jumbotron {
+    background: url(images/background.jpg);
+    padding-top: 120px;
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    color: white;
+    font-family: 'ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: 45px;
+}
+
+.jumbotron p {
+    margin: 30px 0;
+}
+
+button {
+    background-color: #7CC576;
+    color: #fff;
+    font-size: 12px;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 18px 0;
+    border-radius: 28px;
+    border: none;
+    letter-spacing: 0.5px;
+}
+
+.service {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.samples {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 70px;
+}
+
+.sample {
+    text-align: center;
+}
+
+.sample h4 {
+    font-family: 'ubuntu', sans-serif;
+    text-transform: uppercase;
+}
+
+.sample p {
+    font-size: 14px;
+}
+
+.relax {
+    display: flex;
+}
+
+.relax-right {
+    background-image: url("images/relax-right.jpg");
+    padding: 100px;
+}
+
+.relax h2, .relax p {
+    color: #ddd;
+}
+
+.spanGreen {
+    color: #7CC576;
+}
+
+.singlePoint p {
+    display: inline;
+}
+
+.singlePoint i {
+    color: #ddd;
+    margin-right: 15px;
+}
+
+.singlePoint {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.relax button {
+    margin-top: 50px;
+}
