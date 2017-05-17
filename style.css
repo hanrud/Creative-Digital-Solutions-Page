@@ -3,22 +3,20 @@ body {
     font-family: 'lora', serif;
 }
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+.col-xs-1 {width: 8.33%;}
+.col-xs-2 {width: 16.66%;}
+.col-xs-3 {width: 25%;}
+.col-xs-4 {width: 33.33%;}
+.col-xs-5 {width: 41.66%;}
+.col-xs-6 {width: 50%;}
+.col-xs-7 {width: 58.33%;}
+.col-xs-8 {width: 66.66%;}
+.col-xs-9 {width: 75%;}
+.col-xs-10 {width: 83.33%;}
+.col-xs-11 {width: 91.66%;}
+.col-xs-12 {width: 100%;}
 
-.container {
 
-}
 
 h2 {
     font-size: 28px;
@@ -29,34 +27,24 @@ h2 {
 p {
     color: #7c7c7c;
 }
+
 h4 {
     font-family: 'ubuntu', sans-serif;
     text-transform: uppercase;
 }
 
 header {
-    padding: 40px 0;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-header ul {
-    display: flex;
-    justify-content: space-between;
-
+        padding: 40px 0;
+        text-align: center;
 }
 
 header ul li {
     text-decoration: none;
-    justify-content: space-between;
     font-family: 'ubuntu', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     list-style: none;
-
+    margin-bottom: 15px;
 }
 
 header ul a {
@@ -66,6 +54,7 @@ header ul a {
 
 .jumbotron {
     background: url(images/background.jpg);
+    background-size: cover;
     padding-top: 120px;
     padding-bottom: 120px;
     text-align: center;
@@ -80,6 +69,10 @@ header ul a {
 
 .jumbotron p {
     margin: 30px 0;
+}
+
+.jumbotron button {
+  width: 70%;
 }
 
 button {
@@ -100,33 +93,35 @@ button {
     padding: 50px 0;
 }
 
-.samples {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 70px;
-}
-
 .sample {
     text-align: center;
+    padding: 0 15px;
 }
-
 
 .sample p {
     font-size: 14px;
 }
 
-.relax {
-    display: flex;
+.relax-left {
+  background-image: url("images/relax-left.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .relax-right {
     background-image: url("images/relax-right.jpg");
     background-repeat: no-repeat;
-    padding: 100px;
+    background-position: left center;
+    padding: 10%;
 }
 
 .relax h2, .relax p {
     color: #ddd;
+}
+
+.relax-right button {
+  width: 100%;
+  margin-top: 50px;
 }
 
 .spanGreen {
@@ -142,37 +137,17 @@ button {
     margin-right: 15px;
 }
 
-.singlePoint {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.relax button {
-    margin-top: 50px;
-}
-
 .project {
     text-align: center;
     padding: 50px 0 0;
 }
 
 .projectContainer {
-    display: flex;
-    justify-content: flex-end;
-    text-align: left;
-    padding-top: 50px;
+  padding: 2%;
 }
 
 .projectSample {
-    display: flex;
-    margin: 20px;
-    align-items: center;
-
-}
-
-.projectSampleText {
-    margin-left:20px;
+  margin: 3%;
 }
 
 .projectSampleText h6 {
@@ -195,6 +170,12 @@ button {
     margin-left: 10px;
 }
 
+.projectRight {
+  background-image: url(images/mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
 .culture {
     background-color: #F9F9F9;
     text-align: center;
@@ -204,13 +185,6 @@ button {
 .clients {
     padding: 60px 0;
     text-align: center;
-
-}
-
-.oneClient {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .oneClient img {
@@ -226,7 +200,7 @@ button {
 .nextProject {
     background-color: #7CC576;
     color: #fff;
-    padding: 50px 0;
+    padding: 10% 5%;
     text-align: center;
 }
 
@@ -234,31 +208,28 @@ button {
     border: 2px solid #fff;
     border-radius: 5px;
     padding: 10px;
+    width: 80%;
 }
 
-.sponsors {
-    padding: 60px 20%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.sponsor {
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
 }
 
 .contact {
-    display: flex;
-    justify-content: space-around;
-    padding: 60px 0;
+    padding: 2%;
     background-color: #222222;
     color: #fff;
 }
 
 .contact p {
-    margin:0;
+    margin: 0;
     color: #fff;
 }
 
 .contactSmall {
     display: flex;
-    justify-content: flex-start;
     margin: 10px 0;
 }
 .contact i {
@@ -274,7 +245,7 @@ p.hash  {
     font-size: 12px;
 }
 
-div.contactSmallIcon {
+.contactSmallIcon {
     width: 40px;
     text-align: center;
 }
@@ -283,12 +254,11 @@ div.contactSmallIcon {
     padding-left: 10px;
 }
 
-
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer .footerIcons {
@@ -312,6 +282,140 @@ footer div.singleIcon {
     margin: 10px;
 }
 
-footer .footerText {
-    margin: 0 10% 0 20%;
+
+@media (min-width: 768px) {
+  .col-md-1 {width: 8.33%;}
+  .col-md-2 {width: 16.66%;}
+  .col-md-3 {width: 25%;}
+  .col-md-4 {width: 33.33%;}
+  .col-md-5 {width: 41.66%;}
+  .col-md-6 {width: 50%;}
+  .col-md-7 {width: 58.33%;}
+  .col-md-8 {width: 66.66%;}
+  .col-md-9 {width: 75%;}
+  .col-md-10 {width: 83.33%;}
+  .col-md-11 {width: 91.66%;}
+  .col-md-12 {width: 100%;}
+
+  header {
+      text-align: center;
+  }
+
+  header ul {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      margin-top: 40px;
+  }
+
+  .jumbotron button {
+    width: 30%;
+  }
+
+  .samples {
+    display: flex;
+  }
+
+  .cultureSamples {
+      display: flex;
+      justify-content: space-around;
+      padding-top: 70px;
+  }
+  .relax {
+      display: flex;
+  }
+
+  .relax-right button {
+    width: 40%;
+  }
+
+  .singlePoint {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .projectContainer {
+      display: flex;
+      justify-content: flex-end;
+      text-align: left;
+      padding-right: 0;
+  }
+
+  .projectSample {
+      display: flex;
+      align-items: center;
+  }
+
+  .projectSampleText {
+      margin-left: 20px;
+  }
+
+  .sponsors {
+      padding: 60px 20%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+
+  .oneClient {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .client2 {
+    flex-direction: row-reverse;
+  }
+
+  .nextProject button {
+      width: 20%;
+  }
+
+  .contact-post {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2%;
+  }
+  .contact {
+    text-align: left;
+    padding: 60px 2%;
+}
+
+.latestTweets {
+  padding: 0 2%;
+}
+
+footer {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+}
+
+@media (min-width: 992px) {
+  .col-lg-1 {width: 8.33%;}
+  .col-lg-2 {width: 16.66%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-4 {width: 33.33%;}
+  .col-lg-5 {width: 41.66%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-7 {width: 58.33%;}
+  .col-lg-8 {width: 66.66%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-10 {width: 83.33%;}
+  .col-lg-11 {width: 91.66%;}
+  .col-lg-12 {width: 100%;}
+
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact {
+    display: flex;
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
